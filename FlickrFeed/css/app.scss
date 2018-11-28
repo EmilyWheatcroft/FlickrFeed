@@ -1,0 +1,91 @@
+body {
+	background-color: #f5f5f5;
+}
+
+p {
+	font-size: 12px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+@media (min-width: 1025px) {
+  	.header {
+		margin: 25px 0;
+	}
+ }
+
+.searchbar {
+	display: flex;
+}
+
+.photo-container {
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.photo-header {
+		margin-bottom: 20px;
+	}
+
+	.photo-description {
+		overflow: hidden;
+		font-size: 12px;
+
+		img {
+			display: none;
+		}
+
+		p:not(:last-child) {
+			display: none;
+		}
+	}
+
+	.photo-tags {
+		font-size: 12px;
+		overflow: hidden;
+	}
+}
+
+//Search Bar (Foundation)
+
+.animated-search-form[type=search] {
+  width: 10rem;
+  border: 0.125rem solid #e6e6e6;
+  box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.18);
+  border-radius: 0;
+  padding: 0.75rem 1.25rem 0.75rem 0.5rem;
+  transition: width 0.4s ease-in-out;
+  margin-top: 15px;
+}
+
+input[type=submit]{
+	border: 0.125rem solid #e6e6e6;
+	box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.18);
+	border-radius: 0;
+	height: 2.4375rem;
+	margin-top: 15px;
+	color: gray;
+}
+
+.animated-search-form[type=search]:focus {
+  width: 100%;
+}
+
+.check {
+	padding-top: 25px;
+
+	input[type="checkbox"] {
+		margin: 0.25rem 0 0;
+	}
+}
+
+
